@@ -1,33 +1,73 @@
-[image_gen] fallback (rate_limited) for prompt 'A darkened computer screen with error messages, surrounded b...': 
-INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-[image_gen] fallback (rate_limited) for prompt 'A darkened computer screen with error messages, surrounded b...': 
-[image_gen] 429 rate limit, sleeping 6.4s (attempt 1/4)
-INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-[image_gen] 429 rate limit, sleeping 10.3s (attempt 2/4)
-INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-[image_gen] 429 rate limit, sleeping 20.5s (attempt 3/4)
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-[image_gen] 429 rate limit, sleeping 40.1s (attempt 4/4)
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
-[image_gen] fallback (rate_limited) for prompt 'flat vector cartoon illustration, soft pastel colors, warm a...': 
-[orchestrator] image gen summary: 0/9 images generated; 9 fell back to placeholder (9× rate_limited)
-Pipeline failed for job RWSoUYGJWRUoqPZWwozkNA:
-Traceback (most recent call last):
-  File "C:\Projects\chatstory\backend\app\pipeline\orchestrator.py", line 145, in run_pipeline
-    "quote": ch.quote,
-             ^^^^^^^^
-AttributeError: 'Chapter' object has no attribute 'quote'
+Clips - @vaani_iitbrahgiirrhttps://www.instagram.com/reel/DL9_OpISo_o/?id=3674370954169585640_57015769674
+
+[2025-08-08 04:29:00 IST] Mr proton: Mr sent an attachment.Meri tarah tu aahey bharey tu bhi kisi sai pyaar karey 🛐
+.
+.
+.
+.
+.
+.
+.
+.
+.
+#song #trending #music #instagood #like #love #bollywood #listen #oldsong #bollywoodsongs_relatable__mfhttps://www.instagram.com/reel/DM4ql_2sla2/?id=3690887223767619254_72215764199
+
+[2025-08-08 04:29:00 IST] Mr proton: Mr sent an attachment.I don't deserve this, You look perfect 
+.
+.
+.
+#sad #feedfeed #love #loveit #loveislove #explore #explorepage #couples #couplegoals #darklife #foryou #reels #fypシ04darklifehttps://www.instagram.com/p/DMAsL_VKu6K/
+
+[2025-08-08 04:29:00 IST] Mr proton: Mr sent an attachment.#FORYOU #FYP
+#EXPLORE #REACH
+#REELSGROWTH
+#BOOSTYOURREEL
+#TRENDINGNOW #DASTGIRXGROWTHpoet_pencil_https://www.instagram.com/reel/DM-b7lgSnNO/?id=3692511586465510222_75071040651
+
+[2025-08-08 04:28:00 IST] Mr proton: Mr sent an attachment.Dub gaya khayalo mai ❤‍🩹
+. 
+. 
+. 
+. 
+Follow jjd.joydip__https://www.instagram.com/reel/DGVycJgo95G/?id=3572983716070547014_46441984633
+
+[2025-08-08 04:28:00 IST] Mr proton: Mr sent an attachment.Sari Sari Raat Soye Na Hum 🌙
+.
+.
+.
+.
+#mirzaghalib #ghalib #ghalibkiyadein #ghalibshayari #ghalibpoetry #ghalibshayri #ghalibkipoetry #ghalibkeehsas #urdupoetry #urduposts #sarisariraat #3am #2am #sleep #nind #sleepcycle #sleepschedule #viralreels #urdureels #explorefarazedilhttps://www.instagram.com/reel/DKyn_cyyfUN/?id=3653158131808728333_72505757544
+
+[2025-08-08 03:42:00 IST] ✨Kristy_honey✨: Hmm
+
+[2025-08-08 03:42:00 IST] Mr proton: Jao mujhe toh yehi rehne hai
+
+[2025-08-08 03:42:00 IST] Mr proton: Hnn
+
+[2025-08-08 03:41:00 IST] ✨Kristy_honey✨: Good night
+
+[2025-08-08 03:41:00 IST] ✨Kristy_honey✨: I'm going
+
+[2025-08-08 03:39:00 IST] Mr proton: Okay 🥀❤✨Kristy_honey✨
+
+[2025-08-08 03:39:00 IST] ✨Kristy_honey✨: Hmm
+
+[2025-08-08 03:39:00 IST] ✨Kristy_honey✨: You too
+
+[2025-08-08 03:39:00 IST] Mr proton: Liked a message
+
+
+
+📊
+Crunching the numbers
+Identifying narrative arcs…
+75%
+Your story so far
+90
+Messages
+1
+Days
+9am
+Active hour
+✨
+Top emoji
