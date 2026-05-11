@@ -1,0 +1,33 @@
+[image_gen] fallback (rate_limited) for prompt 'A darkened computer screen with error messages, surrounded b...': 
+INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+[image_gen] fallback (rate_limited) for prompt 'A darkened computer screen with error messages, surrounded b...': 
+[image_gen] 429 rate limit, sleeping 6.4s (attempt 1/4)
+INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+[image_gen] 429 rate limit, sleeping 10.3s (attempt 2/4)
+INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60708 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+[image_gen] 429 rate limit, sleeping 20.5s (attempt 3/4)
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+[image_gen] 429 rate limit, sleeping 40.1s (attempt 4/4)
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+INFO:     127.0.0.1:1908 - "GET /api/status/RWSoUYGJWRUoqPZWwozkNA HTTP/1.1" 200 OK
+[image_gen] fallback (rate_limited) for prompt 'flat vector cartoon illustration, soft pastel colors, warm a...': 
+[orchestrator] image gen summary: 0/9 images generated; 9 fell back to placeholder (9× rate_limited)
+Pipeline failed for job RWSoUYGJWRUoqPZWwozkNA:
+Traceback (most recent call last):
+  File "C:\Projects\chatstory\backend\app\pipeline\orchestrator.py", line 145, in run_pipeline
+    "quote": ch.quote,
+             ^^^^^^^^
+AttributeError: 'Chapter' object has no attribute 'quote'
