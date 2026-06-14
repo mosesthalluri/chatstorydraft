@@ -1,3 +1,5 @@
+
+
 Clips - @vaani_iitbrahgiirrhttps://www.instagram.com/reel/DL9_OpISo_o/?id=3674370954169585640_57015769674
 
 [2025-08-08 04:29:00 IST] Mr proton: Mr sent an attachment.Meri tarah tu aahey bharey tu bhi kisi sai pyaar karey 🛐
@@ -298,4 +300,690 @@ The next level is:
 
 > "Here is the story of your friendship and the moments that defined it."
 
-That is what turns these PDFs from interesting reports into something people would genuinely save, share, and revisit years later.  
+That is what turns these PDFs from interesting reports into something people would genuinely save, share, and revisit years later. 
+
+________________________________________________________________________________________________________________________________________________________________
+
+# CHATSTORY MVP REBUILD SPECIFICATION
+
+## Project Goal
+
+Transform ChatStory into a simple, non-technical, consumer-facing product that allows users to upload chat exports, generate AI-powered outputs, preview them, pay only if satisfied, and download the final result.
+
+The primary focus is simplicity, trust, scalability, and conversion.
+
+---
+
+# CORE PRODUCT PRINCIPLES
+
+1. Assume users are non-technical.
+2. Avoid technical terminology.
+3. Minimize clicks.
+4. Build trust before asking for uploads.
+5. Show progress clearly.
+6. Never lose a user's job.
+7. Queue work instead of crashing.
+8. Delete uploaded chats automatically after 24 hours.
+9. Allow users to preview before paying.
+10. Make payment verification simple for admins.
+
+---
+
+# HOMEPAGE DESIGN
+
+The homepage should not immediately show upload functionality.
+
+Instead it should behave like a collection of mini apps.
+
+Example:
+
+---
+
+ChatStory
+Turn conversations into books.
+------------------------------
+
+ChatWrapped
+See your friendship recap.
+--------------------------
+
+GiftBook
+Create personalized gifts.
+--------------------------
+
+Each mini app card must contain:
+
+* App name
+* One sentence description
+* "Open" button
+
+Descriptions must be written for ordinary users.
+
+Examples:
+
+ChatStory:
+"Turn your chats into a storybook you can read forever."
+
+ChatWrapped:
+"Discover your most memorable moments, jokes and milestones."
+
+GiftBook:
+"Turn special conversations into meaningful gifts."
+
+Do not use AI, LLM, embeddings, pipelines, processing, token, inference or other technical terms.
+
+---
+
+# TRUST SECTION
+
+On the homepage create a highly visible trust block.
+
+Example:
+
+Your Privacy Matters
+
+✓ Chats processed securely
+
+✓ Chats automatically deleted after 24 hours
+
+✓ We never sell your data
+
+✓ You control what gets uploaded
+
+This section should always be visible.
+
+---
+
+# EXPORT HELP SECTION
+
+Add a section titled:
+
+How To Export Your Chats
+
+Provide placeholder YouTube video slots.
+
+Example:
+
+WhatsApp Export Tutorial
+
+[YouTube Placeholder]
+
+Telegram Export Tutorial
+
+[YouTube Placeholder]
+
+Instagram Export Tutorial
+
+[YouTube Placeholder]
+
+The URLs will be configurable later.
+
+Store them in environment variables.
+
+---
+
+# TERMS ACCEPTANCE
+
+Before any upload begins:
+
+Require user acceptance.
+
+User must explicitly check:
+
+"I have permission to upload this chat and understand it will be processed to generate AI-created content."
+
+No upload allowed without acceptance.
+
+---
+
+# LEGAL DISCLAIMER
+
+Create a Terms and Conditions page.
+
+Key points:
+
+1. User owns uploaded content or has permission to upload it.
+
+2. User is solely responsible for uploaded content.
+
+3. Outputs are AI-generated interpretations.
+
+4. Outputs may contain inaccuracies.
+
+5. We do not guarantee factual correctness.
+
+6. We are not liable for emotional, legal, financial, personal, social or reputational consequences resulting from generated outputs.
+
+7. We are not responsible for disputes between chat participants.
+
+8. Users must not upload confidential, protected or illegal content.
+
+9. Uploaded files are deleted automatically after 24 hours.
+
+10. Generated outputs may also be deleted after a configurable period.
+
+11. We reserve the right to reject abusive uploads.
+
+12. No guarantee of uninterrupted service.
+
+13. Refund policy should be configurable.
+
+14. Users consent to AI processing.
+
+15. Users confirm they understand outputs may contain interpretation and creative reconstruction.
+
+---
+
+# USER ACCOUNT SYSTEM
+
+Create lightweight user accounts.
+
+Required:
+
+* Email
+* Password
+
+Purpose:
+
+* Track jobs
+* Track queue
+* Track downloads
+* Avoid relying on email links
+
+Reason:
+
+Email links may be flagged as spam.
+
+Users should always be able to return to the website and check status.
+
+---
+
+# USER DASHBOARD
+
+After login users should see:
+
+My Jobs
+
+Example:
+
+---
+
+ChatStory Book
+Status: Processing
+Queue Position: 3
+Estimated Time: 24 minutes
+--------------------------
+
+ChatWrapped
+Status: Completed
+Download Available
+------------------
+
+The dashboard is the central place to track everything.
+
+---
+
+# CHATSTORY FLOW
+
+Step 1
+
+Upload Chat Export
+
+Supported formats configurable.
+
+Validate before accepting.
+
+Reject invalid exports immediately.
+
+---
+
+Step 2
+
+Analyze Chat Volume
+
+Calculate:
+
+* Total messages
+* First message date
+* Last message date
+* Messages per month
+* Messages per year
+
+---
+
+Step 3
+
+Show Activity Visualization
+
+Example:
+
+2021 ███
+2022 ███████
+2023 ███████████
+2024 ██████
+
+Allow user to choose a date range.
+
+Example:
+
+Start Date:
+Jan 2022
+
+End Date:
+Dec 2024
+
+---
+
+Step 4
+
+Pricing Calculation
+
+Pricing must not be hardcoded.
+
+Use environment variables.
+
+Example:
+
+PRICE_SMALL
+PRICE_MEDIUM
+PRICE_LARGE
+
+System should calculate estimated cost based on:
+
+* Selected time range
+* Message volume
+
+Admin can modify pricing without code changes.
+
+---
+
+Step 5
+
+Email Collection
+
+Ask user:
+
+"Where should we send updates?"
+
+Store email.
+
+Send:
+
+* Job started
+* Job completed
+* Payment approved
+
+Do not rely solely on links.
+
+Dashboard remains primary tracking method.
+
+---
+
+# JOB PROCESSING ARCHITECTURE
+
+Current architecture crashes with multiple users.
+
+Replace with queue architecture.
+
+Required:
+
+User Upload
+↓
+Job Queue
+↓
+Worker
+↓
+Generation
+↓
+Storage
+↓
+Dashboard
+
+Requirements:
+
+* Jobs must survive server restart
+* Queue must survive restart
+* No job loss
+
+Recommended:
+
+Redis + Queue Worker
+
+or equivalent persistent queue.
+
+---
+
+# CONCURRENCY CONTROLS
+
+Do not allow unlimited generations.
+
+Environment variable:
+
+MAX_CONCURRENT_JOBS
+
+Example:
+
+1
+2
+3
+
+Additional jobs enter queue.
+
+Show queue position.
+
+Show estimated wait time.
+
+---
+
+# PREVIEW SYSTEM
+
+After generation completes:
+
+Create Preview Output.
+
+Preview must be sufficient for users to evaluate quality.
+
+Example:
+
+* First few chapters
+* Watermarked version
+* Reduced pages
+
+User reviews preview before payment.
+
+---
+
+# PAYMENT FLOW
+
+Only charge after preview approval.
+
+Flow:
+
+Preview Generated
+↓
+User Reviews
+↓
+User Clicks Unlock Full Version
+↓
+Payment Instructions
+
+No automated payment gateway for MVP.
+
+---
+
+# PAYMENT PAGE
+
+Display:
+
+QR Code
+
+UPI ID
+
+Payment Amount
+
+All configurable through environment variables.
+
+Example:
+
+UPI_ID
+
+PAYMENT_QR_PATH
+
+---
+
+# PAYMENT VERIFICATION
+
+After payment:
+
+Ask user to upload screenshot.
+
+Create admin review queue.
+
+Admins receive notification through:
+
+* Email
+* Telegram
+
+Admin actions:
+
+Approve
+Reject
+
+When approved:
+
+Unlock full download.
+
+---
+
+# DOWNLOAD SYSTEM
+
+Once approved:
+
+Provide:
+
+Download Full PDF
+
+Download Source Files (optional)
+
+Track download history.
+
+---
+
+# PDF CLIPART FEATURE
+
+After download:
+
+Offer:
+
+"Enhance My PDF"
+
+This feature adds:
+
+* Decorative pages
+* Annotations
+* Clipart
+* Styling
+
+Can be separate mini app later.
+
+---
+
+# OUTPUT IMPROVEMENTS
+
+Current issues:
+
+Generic chapter titles.
+
+Weak inside joke extraction.
+
+Overly broad summaries.
+
+---
+
+# CHAPTER TITLES
+
+Do not generate keyword titles.
+
+Bad:
+
+Listen & Things
+
+Text & You're
+
+Ani & Kada
+
+Use event-based titles.
+
+Examples:
+
+The Hospital News
+
+The Long Silence
+
+The Unexpected Call
+
+Her Mother's Warning
+
+The Reconnection
+
+---
+
+# INSIDE JOKES
+
+Keep feature.
+
+Improve it.
+
+Classify:
+
+Nicknames
+
+Running Jokes
+
+Shared References
+
+Signature Phrases
+
+Create dedicated section:
+
+"Your Shared Language"
+
+---
+
+# TIMELINE PAGE
+
+Add timeline before chapters.
+
+Example:
+
+2022
+First Conversation
+
+2023
+Hospital Event
+
+2024
+Major Argument
+
+2025
+Reconnected
+
+Users should immediately recognize their story.
+
+---
+
+# EVENT-FIRST STORY GENERATION
+
+Current:
+
+Messages
+→ Story
+
+Replace with:
+
+Messages
+→ Event Extraction
+→ Story
+
+Events become story anchors.
+
+This improves factual grounding.
+
+Psychological interpretation may remain.
+
+However important events must never be lost.
+
+---
+
+# DATA RETENTION POLICY
+
+Uploads retained for maximum 24 hours.
+
+After 24 hours:
+
+Delete:
+
+* Uploaded chat exports
+* Temporary processing files
+
+Retain only:
+
+* Generated output
+* Job metadata
+* Payment metadata
+
+Retention periods should be configurable.
+
+---
+
+# ERROR HANDLING
+
+Never silently fail.
+
+Show:
+
+Generation Failed
+
+Reason
+
+Retry Button
+
+Support Contact
+
+---
+
+# ADMIN PANEL
+
+Required features:
+
+View Jobs
+
+View Queue
+
+View Payments
+
+Approve Payments
+
+Reject Payments
+
+View User Email
+
+View Processing Logs
+
+Manually Regenerate Output
+
+---
+
+# FUTURE SCALABILITY
+
+Design architecture assuming:
+
+100+ simultaneous users
+
+Do not use global state.
+
+Do not store job status in memory.
+
+All job state must persist in database.
+
+All workers must be replaceable and restartable.
+
+No user action should be capable of crashing another user's generation.
+
+---
+
+# SUCCESS METRIC
+
+A first-time user should be able to:
+
+1. Discover the app
+2. Understand what it does
+3. Upload a chat
+4. Select a time range
+5. Track progress
+6. Review preview
+7. Pay
+8. Download result
+
+Without requiring assistance from the developer.
+
