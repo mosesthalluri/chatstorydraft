@@ -1,0 +1,968 @@
+# CHATSTORY V2 MASTER SPECIFICATION
+
+## Memory Preservation Platform
+
+---
+
+# PROJECT VISION
+
+ChatStory is NOT an AI summarizer.
+
+ChatStory is a memory preservation platform.
+
+Users are not uploading years of conversations because they want a short summary.
+
+Users are uploading conversations because they want to preserve memories, relive meaningful moments, revisit milestones, and keep important stories alive.
+
+The system must optimize for:
+
+✓ Memory Preservation
+
+✓ Event Coverage
+
+✓ Story Quality
+
+✓ Emotional Value
+
+✓ Trust
+
+✓ Simplicity
+
+NOT:
+
+✗ Fast Summaries
+
+✗ Aggressive Compression
+
+✗ Minimal Token Usage
+
+✗ One-PDF Outputs
+
+Good things take time.
+
+The system should prefer quality over speed whenever possible.
+
+---
+
+# USER EXPERIENCE PHILOSOPHY
+
+The application should feel like:
+
+"We are carefully crafting something meaningful."
+
+Not:
+
+"We are running an AI tool."
+
+Every screen, notification and message should reinforce:
+
+* Memories matter
+* Stories deserve care
+* Processing takes time because quality matters
+* Users are creating something valuable
+
+---
+
+# HOMEPAGE
+
+The homepage should not immediately show upload forms.
+
+Instead it should display mini-app cards.
+
+Examples:
+
+---
+
+ChatStory
+
+Turn years of conversations into meaningful storybooks.
+
+[Open]
+
+---
+
+ChatWrapped
+
+Rediscover your favorite moments, milestones and memories.
+
+[Open]
+
+---
+
+GiftBook
+
+Turn conversations into personalized gifts.
+
+[Open]
+
+---
+
+Descriptions must be written for ordinary users.
+
+Avoid technical language.
+
+Do not use:
+
+* AI
+* LLM
+* embeddings
+* token limits
+* inference
+* processing pipelines
+
+---
+
+# TRUST SECTION
+
+Homepage must prominently display:
+
+Your Privacy Matters
+
+✓ Chats processed securely
+
+✓ Chats deleted after 24 hours
+
+✓ Data never sold
+
+✓ You control what gets uploaded
+
+This section should remain highly visible.
+
+---
+
+# EXPORT TUTORIAL SECTION
+
+Create:
+
+How To Export Your Chats
+
+Support placeholders for YouTube videos.
+
+Examples:
+
+WhatsApp Export Tutorial
+
+[YouTube Placeholder]
+
+Telegram Export Tutorial
+
+[YouTube Placeholder]
+
+Instagram Export Tutorial
+
+[YouTube Placeholder]
+
+Store URLs in environment variables.
+
+---
+
+# ACCOUNT SYSTEM
+
+Accounts are mandatory.
+
+Users must create an account before uploading.
+
+Purpose:
+
+* Track progress
+* Track queue
+* Access previews
+* Manage downloads
+* Manage payments
+* Access previous projects
+
+---
+
+# ACCOUNT ONBOARDING PAGE
+
+Display before registration.
+
+Title:
+
+A Small Favor Before We Begin
+
+Message:
+
+We know creating an account can feel like an extra step.
+
+The reason we ask is simple.
+
+Unlike many AI tools that generate results in seconds, we carefully process your chats to preserve the moments, memories and stories that matter most.
+
+Because meaningful outputs take time to craft, we need a way for you to:
+
+✓ Track your generation progress
+
+✓ View previews
+
+✓ Access completed books
+
+✓ Manage payments and downloads
+
+✓ Return to your stories anytime
+
+Memories are precious and shouldn't be forgotten.
+
+We believe they deserve more than a rushed summary.
+
+As the saying goes, good things take time.
+
+Please create an account so we can keep your stories safe and let you follow their progress from start to finish.
+
+Buttons:
+
+[ Create Account ]
+
+[ Sign In ]
+
+---
+
+# USER JOURNEY PAGE
+
+After account creation show:
+
+Your Story Journey
+
+1. Create Account ✓
+
+2. Upload Chat
+
+3. Choose Time Period
+
+4. We Analyze Your Memories
+
+5. Preview Generated
+
+6. Payment & Unlock
+
+7. Download Your Collection
+
+This helps users understand the process.
+
+---
+
+# DASHBOARD
+
+Dashboard becomes the central hub.
+
+Users should never rely solely on email links.
+
+Dashboard must show:
+
+* Jobs
+* Queue Position
+* Estimated Time
+* Preview Availability
+* Payment Status
+* Download Status
+
+Example:
+
+ChatStory
+
+Status:
+Processing
+
+Queue Position:
+2
+
+Estimated Time:
+18 Minutes
+
+---
+
+ChatWrapped
+
+Status:
+Completed
+
+Preview Available
+
+---
+
+GiftBook
+
+Status:
+Awaiting Payment
+
+---
+
+---
+
+# TERMS & CONDITIONS MODAL
+
+Checkboxes are not sufficient.
+
+Before upload:
+
+Display mandatory popup modal.
+
+Users cannot continue until accepted.
+
+Contents:
+
+* User owns uploaded content or has permission.
+* AI will process uploaded chats.
+* Outputs may contain inaccuracies.
+* Uploaded chats deleted after 24 hours.
+* Service not responsible for disputes.
+* Service not responsible for emotional, financial, legal, personal, social or reputational consequences.
+* User accepts AI-generated interpretation.
+
+Buttons:
+
+[I Agree And Continue]
+
+[Cancel]
+
+No upload without acceptance.
+
+---
+
+# DATA RETENTION POLICY
+
+Uploaded chats:
+
+Delete automatically after 24 hours.
+
+Temporary processing files:
+
+Delete automatically after 24 hours.
+
+Retain only:
+
+* Generated outputs
+* Job metadata
+* Payment metadata
+
+Retention periods configurable.
+
+---
+
+# CHATSTORY GENERATION PHILOSOPHY
+
+Current approach:
+
+100,000 Messages
+↓
+Summarize
+↓
+One PDF
+
+This approach must be abandoned.
+
+New approach:
+
+100,000 Messages
+↓
+Analyze
+↓
+Extract Events
+↓
+Identify Eras
+↓
+Create Volumes
+↓
+Generate Collection
+
+Goal:
+
+Preserve memories.
+
+Not compress them.
+
+---
+
+# MANDATORY VOLUME PLANNING STAGE
+
+Add a new generation stage.
+
+Pipeline:
+
+Upload
+↓
+Timeline Analysis
+↓
+Event Extraction
+↓
+Volume Planning
+↓
+Story Generation
+↓
+Preview Generation
+↓
+Payment
+↓
+Unlock Collection
+
+Story generation cannot begin until volume planning is completed.
+
+---
+
+# MULTI-VOLUME ARCHITECTURE
+
+Large chats should never be forced into one PDF.
+
+Generate multiple books.
+
+Example:
+
+The Story of Moses & Ishrath
+
+Volume I
+The Beginning
+2019-2020
+
+Volume II
+Growing Closer
+2020-2021
+
+Volume III
+The Silence
+2021-2023
+
+Volume IV
+Finding Each Other Again
+2023-2026
+
+Users receive a collection.
+
+Not a rushed single PDF.
+
+---
+
+# VOLUME SPLITTING LOGIC
+
+Never split by:
+
+✗ Calendar years
+
+✗ Equal page counts
+
+✗ Equal chapter counts
+
+Instead analyze:
+
+1. Message Density
+2. Event Density
+3. Milestones
+4. Topic Shifts
+5. Relationship Phases
+6. Long Silences
+7. Reunions
+8. Conversation Patterns
+
+Volumes should represent meaningful eras.
+
+---
+
+# EVENT PRESERVATION REQUIREMENT
+
+Every major event should appear somewhere in the final collection.
+
+Examples:
+
+* Arguments
+* Reconciliations
+* Confessions
+* Illnesses
+* Family Events
+* Travel
+* Job Changes
+* College Admissions
+* Celebrations
+* Reunions
+* Running Conversations
+
+Coverage is more important than brevity.
+
+---
+
+# STORY GENERATION RULES
+
+New architecture:
+
+Messages
+↓
+Events
+↓
+Narrative
+
+Events become story anchors.
+
+The model may provide interpretation.
+
+However:
+
+Important events must never disappear.
+
+No major periods should be skipped.
+
+---
+
+# CHAPTER DESIGN
+
+Each chapter should include:
+
+1. Narrative
+2. Timeline Events
+3. Significant Conversations
+4. Milestones
+5. Turning Points
+
+Avoid repetitive endings.
+
+Avoid generic summaries.
+
+---
+
+# REMOVE CHAPTER QUOTES
+
+Remove:
+
+* End-of-chapter quotes
+* Random quote blocks
+* AI-selected quotes
+
+They feel formulaic and artificial.
+
+Allow chapters to end naturally.
+
+---
+
+# CHAPTER TITLES
+
+Titles must be event-based.
+
+Bad:
+
+Listen & Things
+
+Ani & Kada
+
+Text & You're
+
+Good:
+
+The Hospital News
+
+The Long Silence
+
+A Difficult Goodbye
+
+The Unexpected Call
+
+The Reconnection
+
+The Job Hunt
+
+The College Years
+
+---
+
+# TIMELINE PAGE
+
+Every volume should include:
+
+Timeline
+
+Example:
+
+2020
+First Conversation
+
+2020
+The Dare
+
+2021
+Major Argument
+
+2023
+Silence Ends
+
+2025
+Reconnected
+
+Users should instantly recognize their journey.
+
+---
+
+# INSIDE JOKES SYSTEM
+
+Keep the feature.
+
+Improve it.
+
+Classify:
+
+Nicknames
+
+Running Jokes
+
+Shared References
+
+Signature Phrases
+
+Recurring Themes
+
+Create section:
+
+Your Shared Language
+
+Examples:
+
+Nicknames You Used
+
+Phrases Only You Two Used
+
+Running Jokes
+
+Recurring References
+
+This should become one of the most memorable sections.
+
+---
+
+# CHATWRAPPED IMPROVEMENTS
+
+Increase data-driven content.
+
+Add:
+
+* Yearly Activity Chart
+* Monthly Activity Chart
+* Message Heatmap
+* Longest Conversation
+* Longest Silence
+* Most Active Period
+* Most Active Days
+* Most Discussed Topics
+* Nicknames Used
+* Shared Phrases
+* Emotional Peaks
+* Conversation Timeline
+
+Output should feel uniquely theirs.
+
+Not generic.
+
+---
+
+# CHAT ANALYSIS PAGE
+
+After upload:
+
+Analyze:
+
+* Total Messages
+* First Message Date
+* Last Message Date
+* Messages Per Month
+* Messages Per Year
+
+Display visual activity graph.
+
+Allow users to choose desired period.
+
+Example:
+
+Jan 2020 → Dec 2024
+
+Pricing updates automatically.
+
+---
+
+# PRICING SYSTEM
+
+All pricing configurable via environment variables.
+
+Examples:
+
+PRICE_SMALL
+
+PRICE_MEDIUM
+
+PRICE_LARGE
+
+PRICE_PER_VOLUME
+
+Do not hardcode pricing.
+
+---
+
+# PREVIEW-FIRST MODEL
+
+Users should never pay blindly.
+
+Flow:
+
+Generate
+↓
+Preview Available
+↓
+User Reviews Preview
+↓
+User Approves
+↓
+Payment
+↓
+Unlock Full Collection
+
+Preview must provide enough content for quality evaluation.
+
+---
+
+# PAYMENT SYSTEM
+
+Current payment flow feels incomplete.
+
+After payment submission:
+
+Show:
+
+Payment Submitted
+
+Status:
+Waiting For Verification
+
+Estimated Review Time:
+Under 12 Hours
+
+We will notify you once approved.
+
+Never leave users confused.
+
+---
+
+# PAYMENT PROVIDER ABSTRACTION
+
+Environment Variable:
+
+PAYMENT_PROVIDER
+
+Supported:
+
+manual
+
+razorpay
+
+future providers
+
+Current MVP:
+
+Manual UPI payment
+
+Future:
+
+Razorpay integration
+
+System should support both without major refactoring.
+
+---
+
+# PAYMENT CONFIGURATION
+
+Environment Variables:
+
+PAYMENT_PROVIDER
+
+UPI_ID
+
+PAYMENT_QR_PATH
+
+RAZORPAY_KEY
+
+RAZORPAY_SECRET
+
+PAYMENT_REVIEW_EMAIL
+
+PAYMENT_REVIEW_TELEGRAM
+
+Nothing should be hardcoded.
+
+---
+
+# MANUAL PAYMENT FLOW
+
+User clicks Unlock.
+
+Show:
+
+* QR Code
+* UPI ID
+* Amount
+
+User uploads screenshot.
+
+Admins receive notification via:
+
+* Email
+* Telegram
+
+Admin can:
+
+Approve
+
+Reject
+
+Once approved:
+
+Unlock downloads.
+
+---
+
+# PDF ENHANCEMENT FEATURE
+
+After download:
+
+Offer:
+
+Enhance My PDF
+
+This can add:
+
+* Decorative pages
+* Clipart
+* Visual styling
+* Custom annotations
+
+Can exist as separate mini-app.
+
+---
+
+# JOB PROCESSING ARCHITECTURE
+
+Current architecture crashes with multiple users.
+
+Implement:
+
+Upload
+↓
+Persistent Queue
+↓
+Worker
+↓
+Generation
+↓
+Storage
+↓
+Dashboard
+
+Requirements:
+
+* Restart safe
+* Persistent
+* No job loss
+
+Recommended:
+
+Redis + Queue Workers
+
+or equivalent.
+
+---
+
+# CONCURRENCY CONTROL
+
+Environment Variable:
+
+MAX_CONCURRENT_JOBS
+
+Additional jobs enter queue.
+
+Show:
+
+Queue Position
+
+Estimated Wait Time
+
+No unlimited concurrent processing.
+
+---
+
+# SCALABILITY REQUIREMENTS
+
+Design for:
+
+100+ concurrent users.
+
+Requirements:
+
+* Persistent Database
+* Persistent Queue
+* Persistent Job State
+* No Global Memory State
+* Restart Safe
+* Worker Isolation
+
+No user should ever be able to crash another user's job.
+
+---
+
+# ERROR HANDLING
+
+Never fail silently.
+
+Show:
+
+Generation Failed
+
+Reason
+
+Retry Button
+
+Support Contact
+
+---
+
+# ADMIN PANEL
+
+Required Features:
+
+View Jobs
+
+View Queue
+
+Approve Payments
+
+Reject Payments
+
+View Users
+
+View Logs
+
+Regenerate Output
+
+Monitor Storage
+
+Monitor Disk Usage
+
+---
+
+# STORAGE MANAGEMENT
+
+Add automatic cleanup.
+
+Monitor:
+
+* Upload Storage
+* Generated PDFs
+* Temp Files
+
+Prevent storage exhaustion.
+
+Generate alerts when storage usage becomes high.
+
+---
+
+# FINAL PRODUCT RULE
+
+Quality over speed.
+
+Memory preservation over summarization.
+
+Event coverage over brevity.
+
+Meaningful collections over single rushed PDFs.
+
+Every design decision should support the goal of helping users preserve, revisit and cherish their memories.
